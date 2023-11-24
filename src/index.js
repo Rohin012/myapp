@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import { Home } from './Home';
 import MultipleState from './MultipleState';
 import { APIDisplay } from './APIDisplay';
+import FormFunction from './FormFunction';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <APIDisplay />
+    <FormFunction />
   </React.StrictMode>
 );
 
