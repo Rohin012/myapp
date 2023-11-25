@@ -2,9 +2,10 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 import { EDisplay } from './EDisplay';
+import navbar from './nav';
 
 
-export const Ecommerce = () => {
+export const Ecommerse = () => {
 
    const [data,setData]= useState([])
    console.log(data);
@@ -12,6 +13,7 @@ export const Ecommerce = () => {
     useEffect(()=>{
 
     axios.get("https://fakestoreapi.com/products")
+    
     .then(y=>{
 
         setData(y.data);
@@ -23,20 +25,12 @@ export const Ecommerce = () => {
     },[])
   return (
     <>
+   
       {
+        
         data.map((v)=>{
-
-
-            return ( <EDisplay title={v.title} des={v.description} img={v.image}/>)
-
-
-        })
-
-      
-
-      }
-      
-
-    </>
+             return ( <EDisplay title={v.title} price={v.price} img={v.image}/>)
+         }) }
+       </>
   )
 }
