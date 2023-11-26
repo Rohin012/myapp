@@ -23,4 +23,6 @@ table,tr,td{
 #root{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
 }
