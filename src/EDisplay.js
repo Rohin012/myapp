@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 export const EDisplay = (props) => {
   return (
-    <div>
+    <div className='root1'>
       <Row>
       <Col sm={4}>
     <Card style={{ width: '21rem' }}>

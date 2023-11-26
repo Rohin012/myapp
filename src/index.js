@@ -8,15 +8,16 @@ import MultipleState from './MultipleState';
 import { APIDisplay } from './APIDisplay';
 import FormFunction from './FormFunction';
 import { Ecommerse } from './Ecommerse';
-import navbar from './nav';
+import Navbar from './Component/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-
+    <Navbar/>
     <Ecommerse />
+    
 </>
 );
 

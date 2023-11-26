@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 import { EDisplay } from './EDisplay';
-import navbar from './nav';
+
 
 
 export const Ecommerse = () => {
@@ -25,7 +25,7 @@ export const Ecommerse = () => {
     },[])
   return (
     <>
-   
+        
       {
         
         data.map((v)=>{
