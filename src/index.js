@@ -10,14 +10,13 @@ import FormFunction from './FormFunction';
 import { Ecommerse } from './Ecommerse';
 import Navbar from './Component/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MyForm from './myform';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-    <Navbar/>
-    <Ecommerse />
-    
+  <MyForm/>  
 </>
 );
 
