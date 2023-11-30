@@ -38,7 +38,7 @@ export default function DataManagement() {
         }
         setIndex(-1);
         setMultipleData(formData);
-
+        console.log(formData)
     }
 
     const DeleteInfo = (index) =>{
@@ -66,10 +66,10 @@ export default function DataManagement() {
 
         <form onSubmit={saveInfo}>
 
-            <input type="text" name="firstName" onChange={changeValue} value={data.firstName}/>
-            <input type="text" name="lastName"  onChange={changeValue} value={data.lastName}/>
-            <input type="text" name="Address.city" onChange={changeValue} value={data.Address.city}/>
-            <input type="text" name="Address.stat" onChange={changeValue} value={data.Address.stat}/>
+            <input type="text" name="firstName" onChange={changeValue} value={data.firstName}/><br/><br/>
+            <input type="text" name="lastName"  onChange={changeValue} value={data.lastName}/><br/><br/>
+            <input type="text" name="Address.city" onChange={changeValue} /><br/><br/>
+            <input type="text" name="Address.stat" onChange={changeValue} /><br/><br/>
             <input type="submit" value="Save"/>
 
 
@@ -83,16 +83,9 @@ export default function DataManagement() {
                 <td>{v.lastName}</td>
                 <td>{v.Address.city}</td>
                 <td>{v.Address.stat}</td>
-                <td><button onClick={()=>{
-
-                    DeleteInfo(index)
-                }}>Delete</button></td>
-                
-                <td><button onClick={()=>{
-
-                    editeInfo(index)
-                    }}>edite</button></td>
-                    </tr>)
+                <td><button onClick={()=>{ DeleteInfo(index)}}>Delete</button></td>
+                 <td><button onClick={()=>{  editeInfo(index)}}>edite</button></td>
+                 </tr>)
             })
          }
         </table>
