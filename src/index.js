@@ -11,13 +11,19 @@ import { Ecommerse } from './Ecommerse';
 import Navbar from './Component/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyForm from './myform';
+import DataManagement from './DataManagement';
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-  <MyForm/>  
-</>
+
+<DataManagement/>
+  </> 
+
+
 );
 
 // If you want to start measuring performance in your app, pass a function

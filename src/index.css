@@ -20,9 +20,9 @@ table,tr,td{
   background-color:blue;
   color: white; */
 /* } */
-#root{
+/* #root{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 28px;
-}
+  gap: 28px; */
+/* } */
