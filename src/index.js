@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyForm from './myform';
 import DataManagement from './DataManagement';
 import SingUpForm from './ValidationForm';
+import CustomerData from './YupValidationForm';
 
 
 
@@ -21,7 +22,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
 
-<SingUpForm/>
+<CustomerData/>
   </> 
 
 
