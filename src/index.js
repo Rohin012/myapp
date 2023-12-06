@@ -14,6 +14,9 @@ import MyForm from './myform';
 import DataManagement from './DataManagement';
 import SingUpForm from './ValidationForm';
 import CustomerData from './YupValidationForm';
+import Login from './axios/logIn';
+import RegistrationForm from './axios/registration';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -21,8 +24,10 @@ import CustomerData from './YupValidationForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
+<BrowserRouter>
+  <App/>
+</BrowserRouter>
 
-<CustomerData/>
   </> 
 
 
