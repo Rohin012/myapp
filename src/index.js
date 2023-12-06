@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyForm from './myform';
 import DataManagement from './DataManagement';
 import SingUpForm from './ValidationForm';
-import CustomerData from './YupValidationForm';
+import CustomerData from './axios/regi';
 import Login from './axios/logIn';
 import RegistrationForm from './axios/registration';
 import { BrowserRouter } from 'react-router-dom';
@@ -25,9 +25,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
 <BrowserRouter>
-  <App/>
+<App/>
 </BrowserRouter>
-
   </> 
 
 

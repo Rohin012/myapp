@@ -4,6 +4,7 @@ import ListAccounts from './ListAccounts';
 import authfetchI from './Interseptor';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import RegistrationForm from './registration';
 
 
 
@@ -45,7 +46,7 @@ export default function Login() {
 
 <input type='text' name="email" value={data.email}  onChange={handleInput}/>
 <input type='text' name='password'  value={data.password}  onChange={handleInput}/>
-<button type='submit' value="save"><Link to="/ListAccounts">logIn</Link></button>
+<button type='submit' value="save"><Link to="/registration">logIn</Link></button>
 </form>
 
 

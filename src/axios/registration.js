@@ -24,9 +24,10 @@ export default function RegistrationForm() {
 
         authfetchI.post("accounts/register",data)
         .then(y=>{
-
-            localStorage.setItem("token",JSON.stringify(y.data))
             console.log(y.data);
+            
+            localStorage.setItem("token",JSON.stringify(y.data))
+            
         }).catch(y=>{
 
             console.log(y)
@@ -36,7 +37,12 @@ export default function RegistrationForm() {
 
     const handleInput = (e)=>{
 
-        setData({...data,[e.target.name]: e.target.value})
+        const { name, checked, value} = e.target;
+
+        var myObject = {...data,[name] : value}
+ 
+ 
+         setData(myObject);
 
     }
 
@@ -50,8 +56,8 @@ export default function RegistrationForm() {
 <input type='text' name='password'  value={data.password}  onChange={handleInput}/>
 <input type='text' name="Confirmpassword" value={data.Confirmpassword}  onChange={handleInput}/>
 
-<input type='checkbox' name="acceptTerm" value={data.acceptTerm}  onChange={handleInput}/>
-<button type='submit' value="save"><Link to="/logIn">SignIn</Link></button>
+<input type='checkbox' name="acceptTerm" checked={data.acceptTerm}  onChange={handleInput}/>
+<button type='submit' value="save"><Link to="/ListAccounts">SignIn</Link></button>
 </form>
 
 

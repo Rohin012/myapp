@@ -9,8 +9,9 @@ function App() {
   return (
     <div className='App'>
     <Routes>
-    <Route path='/' element={<RegistrationForm/>}></Route>
-    <Route path='/Login' element={<Login/>}></Route>
+    
+    <Route path='/' element={<Login/>}></Route>
+    <Route path='/registration' element={<RegistrationForm/>}></Route>
 o      <Route path='/ListAccounts' element={<ListAccounts/>}></Route>
     </Routes>
 
