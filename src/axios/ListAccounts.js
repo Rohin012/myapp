@@ -28,7 +28,13 @@ export default function ListAccounts() {
 
 
                 return(<tr>
-                    <td>{v.firstName}</td><td>{v.lastName}</td>
+                    <td>{v.title}</td>
+                    <td>{v.firstName}</td>
+                    <td>{v.lastName}</td>
+                    <td>{v.email}</td>
+                    <td>{v.password}</td>
+                    <td>{v.Confirmpassword}</td>
+                    
                     </tr>)
 
             })

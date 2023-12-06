@@ -9,6 +9,7 @@ export default function RegistrationForm() {
 
     
    const [data,setData] = useState({
+    title:"",
     firstName:"",
     lastName:"",
     email:"",
@@ -50,6 +51,7 @@ export default function RegistrationForm() {
     <>
 
 <form onSubmit={handleSubmit}>
+<input type='text' name="title" value={data.title}  onChange={handleInput}/>
 <input type='text' name="firstName" value={data.firstName}  onChange={handleInput}/>
 <input type='text' name="lastName" value={data.lastName}  onChange={handleInput}/>
 <input type='text' name="email" value={data.email}  onChange={handleInput}/>
